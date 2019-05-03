@@ -1,4 +1,23 @@
-@given(u'que esteja na tela inicial da americanas')
+@given(u'que estou na tela inicial da americanas')
+def step_impl(context):
+    context.maes.go_home()
+
+@when(u'entro nos menus dia das maes, moda, moda praia')
+def step_impl(context):
+    context.maes.entrar_menu()
+
+@when(u'seleciono o produto')
+def step_impl(context):
+    context.maes.seleciona_produto()
+
+@then(u'deve ser apresentada a pagina do produto')
+def step_impl(context):
+    context.maes.verificacao()
+
+
+
+
+'''@given(u'que esteja na tela inicial da americanas')
 def step_impl(context):
     context.maes.go_home()
 
@@ -25,4 +44,4 @@ def step_impl(context):
 
 @then(u'deve ser apresentado a pagina do produto')
 def step_impl(context):
-    context.maes.verificacao()
+    context.maes.verificacao()'''

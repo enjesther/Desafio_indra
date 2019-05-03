@@ -1,4 +1,4 @@
-from Pyautomators.contrib.scenario_autoretry import scenario_retry
+#from Pyautomators.contrib.scenario_autoretry import scenario_retry
 from pages.pages.selecaodiadasmaes import DiaMaes
 
 from selenium import webdriver
